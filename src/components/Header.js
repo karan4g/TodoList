@@ -14,7 +14,7 @@ export default function Header() {
   const { push } = useRouter();
 
   const redirectPath=(path)=>{
-    console.log(path," this is path")
+
     push(path)
   }
 
@@ -29,7 +29,6 @@ export default function Header() {
     }
   ]
 
- console.log(router.pathname," this is pathname ",router.query," this is query ",router.asPath," this is asPath ")
   return (
     <React.Fragment>
       <Box className="main-menu" sx={{ display: 'flex', justifyContent:"center", textAlign: 'center',m:"2rem" }}>
